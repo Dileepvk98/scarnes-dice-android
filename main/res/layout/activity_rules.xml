@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dvk.scarnesdice.rules">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rule1"
+        android:textColor="@android:color/black"
+        android:text="\n\n1. If player rolls a 1, score no points and lose their turn\n"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+    <TextView
+        android:id="@+id/rule2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. If player rolls a 2 to 6 :-\n\n> Add the rolled value to their points\n> Choose to either re-roll or keep their score and end their turn\n"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/rule1"
+        android:layout_marginRight="30dp"
+        android:layout_alignStart="@id/rule1"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/rule3"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="\n3. The winner is the first player that reaches 30 points or more."
+        android:layout_below="@+id/rule1"
+        android:layout_marginRight="30dp"
+        android:layout_alignStart="@id/rule1"
+        android:layout_marginTop="91dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eg"
+        android:text="Eg, if a player starts their turn and rolls a 6, they can choose to either ‘save’ and end their turn, in which case they can add the 6 to their score, or to reroll and potentially score more points.\n\nLet’s say they decide to roll again, and they get a 4. They now have the option to end their turn and add 10 points (6+4)\nto their score, or to roll again to get even more points.\n\nThey decide to roll again, but getting a 1 makes the player lose all the points from their turn (so their score is the same as before their turn), and finishes their turn, allowing the second player to begin their turn.\n\nThis goes on until one of the players reaches 100 points or more."
+        android:layout_below="@+id/rule3"
+        android:layout_marginRight="20dp"
+        android:layout_alignStart="@id/rule1"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/returntogame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eg"
+        android:text="Return to the Game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:backgroundTint="#005070"
+        />
+    </RelativeLayout>
+</ScrollView>

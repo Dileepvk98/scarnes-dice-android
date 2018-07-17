@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dvk.scarnesdice.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/p1score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="P1 Score : 0"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/p2score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P2 Score : 0"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/turntext"
+        android:text="Player 1 get's the first turn "
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+     <ImageButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/dice1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="150dp"
+         android:id="@+id/dicepic"
+         android:backgroundTint="@android:color/transparent" />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Click the dice to roll it"
+         android:textColor="@android:color/darker_gray"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="-30dp"
+         android:layout_above="@+id/savebtn"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="-55dp"
+         android:layout_centerHorizontal="true"
+         android:textStyle="bold"
+         android:textColor="@android:color/holo_blue_dark"
+         android:layout_above="@+id/savebtn"
+         android:text="Target Score : 30"/>
+     <Button
+        android:id="@+id/savebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE Score"
+        android:hapticFeedbackEnabled="true"
+        android:backgroundTint="#00ff50"
+         android:layout_marginLeft="120dp"
+         android:layout_marginRight="120dp"
+        android:layout_below="@+id/dicepic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"  />
+        <Button
+            android:id="@+id/resetbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New game"
+            android:backgroundTint="#ff0020"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_below="@+id/savebtn"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

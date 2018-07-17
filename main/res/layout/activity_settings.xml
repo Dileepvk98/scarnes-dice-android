@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dvk.scarnesdice.settings">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Target point"
+        android:id="@+id/swp"
+        android:layout_marginTop="19dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/swp"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@+id/swp"
+        android:checkedButton="@+id/rb30"
+        android:layout_alignStart="@+id/swp"
+        android:id="@+id/radiogrp">
+
+        <RadioButton
+            android:id="@+id/rb30"
+            android:layout_width="wrap_content"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="30"/>
+        <RadioButton
+            android:id="@+id/rb50"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"/>
+        <RadioButton
+            android:id="@+id/rb75"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75"/>
+        <RadioButton
+            android:id="@+id/rb100"
+            android:layout_width="wrap_content"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="100"/>
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!  under construction  !"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_below="@+id/radiogrp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"  />
+    <Button
+        android:id="@+id/returntogame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to the Game"
+        android:textColor="#ffffff"
+        android:backgroundTint="#005070"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="520dp"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
